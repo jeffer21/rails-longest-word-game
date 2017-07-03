@@ -1,3 +1,44 @@
 // Place all the styles related to the LongestWordGAMES controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+  text-align:center;
+}
+
+.letters {
+  text-transform: capitalize;
+  font-size: 20px;
+  padding:10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color:#397ED9;
+  margin-right:5px;
+
+}
+
+.game-container {
+  display:flex;
+}
+
+.letter-box-style {
+  text-transform: capitalize;
+  font-size: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color:#397ED9;
+  padding:20px;
+  text-align: center;
+
+}
+.word-container{
+  width:90%;
+  margin:0 auto;
+}
+
+.row {
+  margin-top:50px;
+}
+
+.btn {
+  margin-top:10px;
+}

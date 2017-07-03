@@ -1,2 +1,20 @@
-<h1>LongestWordGames#game</h1>
-<p>Find me in app/views/longest_word_games/game.html.erb</p>
+<h1>Longest Word GAme</h1>
+<div class="container">
+  <div class="row">
+    <% @grid.each do |letter| %>
+    <div class="col-xs-3 col-md-1 letter-box-style"><%= letter %></div>
+    <% end %>
+  </div>
+  <div class="row">
+    <div class="col-xs-2 col-md-3"></div>
+    <div class="col-xs-8 offset-xs-2 col-md-6 offset-md-3">
+      <form action="/score" method="get">
+        <h2>What's your best shot ?</h2>
+        <input type="hidden" name="grid" value="<%= @grid %>">
+        <input type="hidden" name="start_time" value="<%= @start_time %>">
+        <input type="text" name="attempt">
+        <input type="submit" class="btn btn-primary" value="Score">
+      </form>
+    </div>
+  </div>
+</div>
